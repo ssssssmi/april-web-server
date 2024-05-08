@@ -1,0 +1,74 @@
+INFO  2024-05-02 15:30:41 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-02 15:51:27 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-02 15:51:27 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-02 15:54:15 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-02 15:54:15 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 11:15:11 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 11:15:11 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 11:15:11 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:27) - Хранилище проинициализировано
+INFO  2024-05-07 11:28:49 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 11:28:49 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 11:28:49 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 11:43:37 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 11:43:37 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 11:43:37 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 12:24:21 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 12:24:21 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 12:24:21 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 12:25:43 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 12:25:43 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 12:25:43 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 12:30:49 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 12:30:49 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 12:30:49 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 13:44:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 13:44:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 13:44:16 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 13:50:57 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 13:50:57 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 13:50:57 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 14:01:07 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 14:01:07 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 14:01:07 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 14:34:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 14:34:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 14:34:28 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 14:44:44 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-07 14:44:44 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 14:44:44 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-07 14:45:21 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8080
+INFO  2024-05-07 14:45:21 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-07 14:45:21 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 10:07:21 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-08 10:07:21 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-08 10:07:21 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 10:08:53 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-08 10:08:53 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-08 10:08:53 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 10:08:54 [pool-2-thread-2] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:73) - Start parse request line
+INFO  2024-05-08 10:08:54 [pool-2-thread-2] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:42) - Try parsing body
+INFO  2024-05-08 10:09:52 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-08 10:09:52 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-08 10:09:52 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 10:10:34 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-08 10:10:34 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-08 10:10:34 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 10:11:15 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-08 10:11:15 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-08 10:11:15 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 10:12:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:23) - Сервер запущен на порту: 8189
+INFO  2024-05-08 10:12:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:25) - Диспетчер проинициализирован
+INFO  2024-05-08 10:12:16 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 10:12:26 [pool-2-thread-2] ru.otus.smi.web.server.HttpServer (HttpServer.java:31) - Подключился новый клиент
+DEBUG 2024-05-08 10:12:26 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:31) - Подключился новый клиент
+DEBUG 2024-05-08 10:12:26 [pool-2-thread-2] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:73) - Start parse request line
+DEBUG 2024-05-08 10:12:26 [pool-2-thread-2] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:42) - Try parsing body
+DEBUG 2024-05-08 10:12:26 [pool-2-thread-2] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 90d7b71a-1cec-4060-a60e-0fa5721ec8e3
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
