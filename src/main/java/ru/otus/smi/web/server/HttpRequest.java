@@ -1,11 +1,15 @@
 package ru.otus.smi.web.server;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 public class HttpRequest {
+    private static final Logger log = LogManager.getLogger(HttpRequest.class.getName());
     private String rawRequest;
     private String uri;
     private HttpMethod method;
@@ -35,7 +39,8 @@ public class HttpRequest {
     }
 
     public void tryToParseBody() {
-        if (method == HttpMethod.POST) {
+        if (method != HttpMethod.GET) {
+            log.debug("Start parse body");
             List<String> lines = rawRequest.lines().collect(Collectors.toList());
             int splitLine = -1;
             for (int i = 0; i < lines.size(); i++) {
@@ -50,6 +55,7 @@ public class HttpRequest {
                     stringBuilder.append(lines.get(i));
                 }
                 this.body = stringBuilder.toString();
+                log.debug("Body parsed");
             }
         }
     }
@@ -63,6 +69,7 @@ public class HttpRequest {
     // }
 
     public void parseRequestLine() {
+        log.debug("Start parse request line");
         int startIndex = rawRequest.indexOf(' ');
         int endIndex = rawRequest.indexOf(' ', startIndex + 1);
         this.uri = rawRequest.substring(startIndex + 1, endIndex);
@@ -81,11 +88,9 @@ public class HttpRequest {
 
     public void info(boolean showRawRequest) {
         if (showRawRequest) {
-            System.out.println(rawRequest);
+            log.debug("\n" + rawRequest);
         }
-        System.out.println("URI: " + uri);
-        System.out.println("HTTP-method: " + method);
-        System.out.println("Parameters: " + parameters);
-        System.out.println("Body: " + body);
+        log.trace("\nURI: " + uri + "\n" + "HTTP-method: " +
+                  method + "\n" + "Parameters: " + parameters + "\n" + "Body: " + body + "\n");
     }
 }
