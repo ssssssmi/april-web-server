@@ -12,7 +12,7 @@ import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
 public class EditProductProcessor implements RequestProcessor{
-    private static final Logger log = LogManager.getLogger(CreateNewProductProcessor.class.getName());
+    private static final Logger log = LogManager.getLogger(EditProductProcessor.class.getName());
 
     @Override
     public void execute(HttpRequest httpRequest, OutputStream output) throws IOException {
