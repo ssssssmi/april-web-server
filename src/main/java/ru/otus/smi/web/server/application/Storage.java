@@ -1,17 +1,21 @@
 package ru.otus.smi.web.server.application;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import ru.otus.smi.web.server.HttpServer;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
 public class Storage {
+    private static final Logger log = LogManager.getLogger(HttpServer.class.getName());
     private static List<Item> items;
 
     public static void init() {
-        System.out.println("Хранилище проинициализировано");
+        log.info("Storage initialized");
         items = new ArrayList<>();
-
         for (int i = 0; i < 3; i++) {
             items.add(new Item("item " + i, 100 + (int)(Math.random() * 1000)));
         }
@@ -24,5 +28,14 @@ public class Storage {
     public static void save(Item item) {
         item.setId(UUID.randomUUID());
         items.add(item);
+    }
+
+    public static void editInit(Item newItem) {
+        for (Item item : items) {
+            if (item.getId().equals(newItem.getId())) {
+                item.setTitle(newItem.getTitle());
+                item.setPrice(newItem.getPrice());
+            }
+        }
     }
 }

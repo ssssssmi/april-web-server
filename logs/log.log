@@ -72,3 +72,403 @@ Accept-Encoding: gzip, deflate, br
 Connection: keep-alive
 
 
+INFO  2024-05-08 11:33:50 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:33:50 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:37:26 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:37:26 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:38:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:38:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:40:19 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:40:20 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:40:20 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 11:40:24 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:40:24 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:40:24 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 11:40:24 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:42) - Start parse body
+DEBUG 2024-05-08 11:40:24 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: fc439bd8-27dc-4d03-bfd7-f3b2a05019e9
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+INFO  2024-05-08 11:49:43 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:49:43 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:49:43 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 11:49:45 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:49:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:49:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 11:49:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:42) - Start parse body
+DEBUG 2024-05-08 11:49:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 914ce40e-ed14-4f67-9e86-b641cead7ada
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+DEBUG 2024-05-08 11:49:45 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Сформировали Hello и отправили
+INFO  2024-05-08 11:52:42 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:52:42 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:52:42 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 11:52:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:52:45 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:52:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 11:52:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:42) - Start parse body
+DEBUG 2024-05-08 11:52:45 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 2c9a0f0e-f3d0-45b4-9076-1fdaa90c7be6
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+DEBUG 2024-05-08 11:52:45 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Сформировали Hello и отправили
+INFO  2024-05-08 11:53:47 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 11:53:47 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 11:53:47 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 11:53:48 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:53:48 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 11:53:48 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 11:53:48 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: f23f3ab9-d92b-4583-86d7-9846b6dd5376
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+DEBUG 2024-05-08 11:53:48 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Сформировали Hello и отправили
+INFO  2024-05-08 12:09:42 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 12:09:42 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 12:09:42 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 12:09:44 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 12:09:44 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 12:09:44 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 12:09:44 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 6bf87faf-29b4-4b24-b22c-76dbe7ebbb84
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-08 12:09:44 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - URI: /hello
+HTTP-method: GET
+Parameters: {}
+Body: null
+DEBUG 2024-05-08 12:09:44 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Сформировали Hello и отправили
+INFO  2024-05-08 12:10:33 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 12:10:33 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 12:10:33 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 12:10:34 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 12:10:34 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 12:10:34 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 12:10:34 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 9a0b4059-6afe-4673-bbe0-532ab498212f
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-08 12:10:34 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /hello
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-08 12:10:34 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Сформировали Hello и отправили
+INFO  2024-05-08 12:26:39 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Сервер запущен на порту: 8189
+INFO  2024-05-08 12:26:39 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Диспетчер проинициализирован
+INFO  2024-05-08 12:26:39 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 12:26:46 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 12:26:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - Подключился новый клиент
+DEBUG 2024-05-08 12:26:46 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Закрытие сокета клиента
+DEBUG 2024-05-08 12:26:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 12:26:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+GET /hello HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 2e87d14b-00a4-424c-965e-c495f02c9b1f
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-08 12:26:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /hello
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-08 12:26:46 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Сформировали Hello и отправили
+DEBUG 2024-05-08 12:26:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Закрытие сокета клиента
+INFO  2024-05-08 13:36:58 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-08 13:36:58 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-08 13:36:58 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 13:37:02 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 13:37:02 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 13:37:02 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 13:37:02 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 13:37:02 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+GET /items HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: cedbcd78-f32b-4bc9-ae23-a69c7241a74f
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-08 13:37:02 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-08 13:37:02 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Сформировали список итемсов и отправили
+DEBUG 2024-05-08 13:37:02 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-08 13:40:27 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-08 13:40:27 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-08 13:40:27 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+DEBUG 2024-05-08 13:40:31 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 13:40:31 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:43) - Start parse body
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:58) - Body parsed
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+POST /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 99463f71-f05d-4c74-b26b-cc2d14dd8ff5
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 44
+
+{
+    "title": "item 3",
+    "price": 1
+}
+TRACE 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: POST
+Parameters: {}
+Body: {    "title": "item 3",    "price": 1}
+
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.CreateNewProductProcessor (CreateNewProductProcessor.java:26) - Добавили новый итем и отправили подтверждение
+DEBUG 2024-05-08 13:40:31 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-08 14:25:32 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-08 14:25:32 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-08 14:25:32 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Хранилище проинициализировано
+INFO  2024-05-08 14:26:08 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-08 14:26:08 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-08 14:26:08 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-08 14:26:15 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:15 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:15 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:15 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:26:15 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+GET /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 95ca3f7f-378c-4629-8975-66bb321c38d6
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 44
+
+{
+    "title": "item 3",
+    "price": 1
+}
+TRACE 2024-05-08 14:26:15 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-08 14:26:15 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-08 14:26:15 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:36 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:36 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:43) - Start parse body
+DEBUG 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:58) - Body parsed
+DEBUG 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+PUT /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 889814ff-808b-4d25-8aec-1d67cd1fb2be
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 44
+
+{
+    "title": "item 3",
+    "price": 1
+}
+TRACE 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: PUT
+Parameters: {}
+Body: {    "title": "item 3",    "price": 1}
+
+DEBUG 2024-05-08 14:26:36 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:43 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:43 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:43) - Start parse body
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:58) - Body parsed
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+POST /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: f7f3fc7d-2f32-4900-9b7b-d97826a398cb
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 44
+
+{
+    "title": "item 3",
+    "price": 1
+}
+TRACE 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: POST
+Parameters: {}
+Body: {    "title": "item 3",    "price": 1}
+
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.application.processors.CreateNewProductProcessor (CreateNewProductProcessor.java:26) - Add item and send it with id
+DEBUG 2024-05-08 14:26:43 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:49 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:49 [pool-9-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:26:49 [pool-9-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:26:49 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:26:49 [pool-9-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+GET /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 3a3fcb60-c609-4961-9e8a-08fbdb4013cc
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 44
+
+{
+    "title": "item 3",
+    "price": 1
+}
+TRACE 2024-05-08 14:26:49 [pool-9-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-08 14:26:49 [pool-9-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-08 14:26:49 [pool-9-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:27:23 [pool-10-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:27:23 [pool-10-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:43) - Start parse body
+DEBUG 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:58) - Body parsed
+DEBUG 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+PUT /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 49300cb7-82ad-4886-8897-53f8332ea3a8
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 97
+
+{
+    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",
+    "title": "item 4",
+    "price": 999
+}
+TRACE 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: PUT
+Parameters: {}
+Body: {    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",    "title": "item 4",    "price": 999}
+
+DEBUG 2024-05-08 14:27:23 [pool-11-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:27:48 [pool-12-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:27:48 [pool-12-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:43) - Start parse body
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:58) - Body parsed
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+PUT /products HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 110bac5e-5141-4db4-9edf-f97dbfc4ed5f
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 97
+
+{
+    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",
+    "title": "item 4",
+    "price": 999
+}
+TRACE 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /products
+HTTP-method: PUT
+Parameters: {}
+Body: {    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",    "title": "item 4",    "price": 999}
+
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.application.processors.EditProductProcessor (EditProductProcessor.java:26) - Edit item and send
+DEBUG 2024-05-08 14:27:48 [pool-13-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:27:56 [pool-14-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:27:56 [pool-15-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-08 14:27:56 [pool-14-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-08 14:27:56 [pool-15-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:72) - Start parse request line
+DEBUG 2024-05-08 14:27:56 [pool-15-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:91) - 
+GET /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: aea79f52-0a82-4494-9c4f-52d8b69faf1f
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 97
+
+{
+    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",
+    "title": "item 4",
+    "price": 999
+}
+TRACE 2024-05-08 14:27:56 [pool-15-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:93) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-08 14:27:56 [pool-15-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-08 14:27:56 [pool-15-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
