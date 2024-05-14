@@ -16,7 +16,7 @@ public class Storage {
     public static void init() {
         log.info("Storage initialized");
         items = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             items.add(new Item("item " + i, 100 + (int)(Math.random() * 1000)));
         }
     }
@@ -37,5 +37,9 @@ public class Storage {
                 item.setPrice(newItem.getPrice());
             }
         }
+    }
+
+    public static void delInit(UUID id) {
+        items.removeIf(item -> item.getId().equals(id));
     }
 }

@@ -3,9 +3,11 @@ package ru.otus.smi.web.server;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class HttpRequest {
@@ -15,6 +17,7 @@ public class HttpRequest {
     private HttpMethod method;
     private Map<String, String> parameters;
     private String body;
+    private UUID id;
 
     public String getRouteKey() {
         return String.format("%s %s", method, uri);
@@ -32,6 +35,7 @@ public class HttpRequest {
         return body;
     }
 
+
     public HttpRequest(String rawRequest) {
         this.rawRequest = rawRequest;
         this.parseRequestLine();
@@ -39,7 +43,7 @@ public class HttpRequest {
     }
 
     public void tryToParseBody() {
-        if (method != HttpMethod.GET) {
+        if (method != HttpMethod.GET && method != HttpMethod.DELETE) {
             log.debug("Start parse body");
             List<String> lines = rawRequest.lines().collect(Collectors.toList());
             int splitLine = -1;
@@ -60,14 +64,6 @@ public class HttpRequest {
         }
     }
 
-    // POST /products HTTP/1.1
-    // Content-Type: application/json
-    //
-    // {
-    //   "title": "a",
-    //   "price": 100
-    // }
-
     public void parseRequestLine() {
         log.debug("Start parse request line");
         int startIndex = rawRequest.indexOf(' ');
@@ -75,6 +71,11 @@ public class HttpRequest {
         this.uri = rawRequest.substring(startIndex + 1, endIndex);
         this.method = HttpMethod.valueOf(rawRequest.substring(0, startIndex));
         this.parameters = new HashMap<>();
+
+        if (this.method == HttpMethod.OPTIONS) {
+            this.uri = "";
+        }
+
         if (uri.contains("?")) {
             String[] elements = uri.split("[?]");
             this.uri = elements[0];
