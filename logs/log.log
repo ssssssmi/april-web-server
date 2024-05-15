@@ -3410,3 +3410,416 @@ Body:
 
 DEBUG 2024-05-14 17:27:49 [pool-5-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:21) - Answered OPTIONS
 DEBUG 2024-05-14 17:27:49 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 12:46:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 12:46:16 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 12:46:16 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 12:46:17 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:46:17 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:46:17 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:46:17 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:46:17 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 2f81b5e3-0512-4480-ac45-bdf970882c44
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 97
+
+{
+    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",
+    "title": "item 4",
+    "price": 999
+}
+TRACE 2024-05-15 12:46:17 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-15 12:46:17 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-15 12:46:17 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:46:40 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:46:40 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:46:40 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:46:40 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:46:40 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /item?id=80124834-0a2b-4d49-893b-ae50c3b775bc HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 1af30e56-9292-48dc-867a-00afe5d78019
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 97
+
+{
+    "id": "7d90ae0b-df91-4e28-b372-3afb7e92ff7a",
+    "title": "item 4",
+    "price": 999
+}
+TRACE 2024-05-15 12:46:40 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: GET
+Parameters: {id=80124834-0a2b-4d49-893b-ae50c3b775bc}
+Body: null
+
+DEBUG 2024-05-15 12:46:40 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:46:58 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:46:58 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:46:58 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:46:58 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:46:58 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: c58309ca-290e-4865-a4e3-a8f2c13373e9
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:46:58 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-15 12:46:58 [pool-7-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-15 12:46:58 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:47:02 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:47:02 [pool-9-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:47:02 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:47:02 [pool-9-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:47:02 [pool-9-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items?id=80124834-0a2b-4d49-893b-ae50c3b775bc HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: db95b195-5f3d-405b-a250-23360bbd19dd
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:47:02 [pool-9-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {id=80124834-0a2b-4d49-893b-ae50c3b775bc}
+Body: null
+
+DEBUG 2024-05-15 12:47:02 [pool-9-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-15 12:47:02 [pool-9-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:47:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:47:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:47:41 [pool-11-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:47:41 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:47:41 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /item?id=80124834-0a2b-4d49-893b-ae50c3b775bc HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 6de6943d-8a42-4dc5-9117-2812f1e163b5
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:47:41 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: GET
+Parameters: {id=80124834-0a2b-4d49-893b-ae50c3b775bc}
+Body: null
+
+DEBUG 2024-05-15 12:47:41 [pool-11-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 12:48:15 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 12:48:15 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 12:48:15 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 12:48:23 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:48:23 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:48:23 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:48:23 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:48:23 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: afdaf17f-ce6f-4e0e-a791-48e45f026498
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:48:23 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-15 12:48:23 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-15 12:48:23 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:48:55 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:48:55 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:48:55 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:48:55 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:48:55 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /item?id=ef34609a-596d-49f8-99e2-b011f0b78922 HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 343dc799-f61d-4c20-b72d-d79ac43243a5
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:48:55 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: GET
+Parameters: {id=ef34609a-596d-49f8-99e2-b011f0b78922}
+Body: null
+
+DEBUG 2024-05-15 12:48:55 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 12:49:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 12:49:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 12:49:28 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 12:49:41 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:49:41 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:49:41 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:49:41 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:49:41 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 691f3704-e748-4532-914a-1b69ea0c697a
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:49:41 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-15 12:49:41 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:25) - Generated list of items and sent it
+DEBUG 2024-05-15 12:49:41 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:49:56 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:49:56 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 12:49:56 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 12:49:56 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 12:49:56 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /item?id=729b7e3d-be69-4d79-9736-af2600967b55 HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: f838ed9e-8e23-4648-a5ca-ee9b204a828a
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 12:49:56 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: GET
+Parameters: {id=729b7e3d-be69-4d79-9736-af2600967b55}
+Body: null
+
+DEBUG 2024-05-15 12:49:56 [pool-5-thread-1] ru.otus.smi.web.server.application.processors.GetProductProcessor (GetProductProcessor.java:24) - Item returned
+DEBUG 2024-05-15 12:49:56 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 14:34:41 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 14:34:41 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 14:34:41 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+INFO  2024-05-15 14:35:00 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 14:35:00 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 14:35:00 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 14:35:18 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 14:35:18 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 14:35:18 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 14:35:18 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:68) - Start parse request line
+DEBUG 2024-05-15 14:36:22 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+GET /test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 27ed142c-d98d-488e-a6da-9e10b4a1ceec
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 14:36:22 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:96) - 
+URI: /test.txt
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-15 14:36:22 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 14:55:58 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 14:55:58 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 14:55:58 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 14:56:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 14:56:05 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 14:56:05 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 14:56:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:67) - Start parse request line
+DEBUG 2024-05-15 14:56:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:96) - 
+GET /test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 5c1e59a4-e6a4-4c2d-a7d5-d6cf00267223
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 14:56:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:98) - 
+URI: test.txt
+HTTP-method: GET
+Parameters: {file=test.txt}
+Body: null
+
+DEBUG 2024-05-15 14:56:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 15:36:50 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 15:36:50 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 15:36:50 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+INFO  2024-05-15 16:06:42 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 16:06:42 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 16:06:42 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 16:06:46 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:06:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:06:46 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 16:06:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:66) - Start parse request line
+DEBUG 2024-05-15 16:06:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:88) - 
+GET /file?name=test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 988094bb-b8c9-4c82-a5df-aae1b8e975fa
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 16:06:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:90) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-15 16:06:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 16:07:39 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 16:07:39 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 16:07:39 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 16:07:42 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:07:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:07:42 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 16:07:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:66) - Start parse request line
+DEBUG 2024-05-15 16:07:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:88) - 
+GET /file?name=test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: c3374de3-f132-4f23-b38c-010440bb346b
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 16:07:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:90) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-15 16:07:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 16:08:24 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:08:24 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:66) - Start parse request line
+DEBUG 2024-05-15 16:08:24 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:88) - 
+GET /file?name=test.txt HTTP/1.1
+Host: localhost:8189
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+TRACE 2024-05-15 16:08:24 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:90) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-15 16:08:24 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 16:08:24 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:08:24 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:66) - Start parse request line
+DEBUG 2024-05-15 16:08:24 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:88) - 
+GET /favicon.ico HTTP/1.1
+Host: localhost:8189
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Accept: image/avif,image/webp,*/*
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Referer: http://localhost:8189/file?name=test.txt
+Sec-Fetch-Dest: image
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+
+
+TRACE 2024-05-15 16:08:24 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:90) - 
+URI: /favicon.ico
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-15 16:08:24 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+INFO  2024-05-15 16:47:03 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:24) - Server running on port: 8189
+INFO  2024-05-15 16:47:03 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:26) - Dispatcher initialized
+INFO  2024-05-15 16:47:03 [main] ru.otus.smi.web.server.application.Storage (Storage.java:17) - Storage initialized
+DEBUG 2024-05-15 16:47:05 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:47:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:47:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:66) - Start parse request line
+DEBUG 2024-05-15 16:47:05 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 16:47:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:88) - 
+GET /file?name=test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.38.0
+Accept: */*
+Postman-Token: 4dcfe6b2-0db6-40ec-a45f-54186863d233
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-15 16:47:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:90) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-15 16:47:05 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket
+DEBUG 2024-05-15 16:47:15 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:32) - New client connected
+DEBUG 2024-05-15 16:47:15 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:66) - Start parse request line
+DEBUG 2024-05-15 16:47:15 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:88) - 
+GET /file?name=test.txt HTTP/1.1
+Host: localhost:8189
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+
+
+TRACE 2024-05-15 16:47:15 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:90) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-15 16:47:15 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:48) - Close client socket

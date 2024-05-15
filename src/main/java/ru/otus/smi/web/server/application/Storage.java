@@ -25,6 +25,15 @@ public class Storage {
         return Collections.unmodifiableList(items);
     }
 
+    public static Item getItemById(UUID id) {
+        for (Item item : items) {
+            if (item.getId().equals(id)) {
+                return item;
+            }
+        }
+        return null;
+    }
+
     public static void save(Item item) {
         item.setId(UUID.randomUUID());
         items.add(item);

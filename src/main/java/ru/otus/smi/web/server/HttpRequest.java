@@ -3,7 +3,6 @@ package ru.otus.smi.web.server;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +18,12 @@ public class HttpRequest {
     private String body;
     private UUID id;
 
+    public HttpRequest(String rawRequest) {
+        this.rawRequest = rawRequest;
+        this.parseRequestLine();
+        this.tryToParseBody();
+    }
+
     public String getRouteKey() {
         return String.format("%s %s", method, uri);
     }
@@ -33,13 +38,6 @@ public class HttpRequest {
 
     public String getBody() {
         return body;
-    }
-
-
-    public HttpRequest(String rawRequest) {
-        this.rawRequest = rawRequest;
-        this.parseRequestLine();
-        this.tryToParseBody();
     }
 
     public void tryToParseBody() {
@@ -71,11 +69,9 @@ public class HttpRequest {
         this.uri = rawRequest.substring(startIndex + 1, endIndex);
         this.method = HttpMethod.valueOf(rawRequest.substring(0, startIndex));
         this.parameters = new HashMap<>();
-
         if (this.method == HttpMethod.OPTIONS) {
             this.uri = "";
         }
-
         if (uri.contains("?")) {
             String[] elements = uri.split("[?]");
             this.uri = elements[0];
