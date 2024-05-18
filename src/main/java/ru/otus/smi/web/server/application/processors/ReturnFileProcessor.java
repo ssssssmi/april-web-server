@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.otus.smi.web.server.HttpRequest;
+import ru.otus.smi.web.server.JDBC.JDBCService;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,7 +15,7 @@ public class ReturnFileProcessor implements RequestProcessor {
     private static final Logger log = LogManager.getLogger(ReturnFileProcessor.class.getName());
 
     @Override
-    public void execute(HttpRequest httpRequest, OutputStream output) throws IOException {
+    public void execute(HttpRequest httpRequest, OutputStream output, JDBCService jdbcService) throws IOException {
         String text = "";
         try (FileInputStream fileInputStream = new FileInputStream("static/" + httpRequest.getParameter("name"))) {
             byte[] buffer = new byte[1024];

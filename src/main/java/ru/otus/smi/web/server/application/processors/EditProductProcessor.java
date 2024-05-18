@@ -5,7 +5,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.otus.smi.web.server.HttpRequest;
 import ru.otus.smi.web.server.application.Item;
-import ru.otus.smi.web.server.application.Storage;
+import ru.otus.smi.web.server.JDBC.JDBCService;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -15,12 +15,11 @@ public class EditProductProcessor implements RequestProcessor{
     private static final Logger log = LogManager.getLogger(EditProductProcessor.class.getName());
 
     @Override
-    public void execute(HttpRequest httpRequest, OutputStream output) throws IOException {
+    public void execute(HttpRequest httpRequest, OutputStream output, JDBCService jdbcService) throws IOException {
         Gson gson = new Gson();
         Item item = gson.fromJson(httpRequest.getBody(), Item.class);
-        Storage.editInit(item);
+        jdbcService.editItem(item);
         String jsonOutItem = gson.toJson(item);
-
         String response = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n" + jsonOutItem;
         output.write(response.getBytes(StandardCharsets.UTF_8));
         log.debug("Edit item and send");

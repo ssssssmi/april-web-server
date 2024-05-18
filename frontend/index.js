@@ -9,15 +9,16 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     };
 
     $scope.submitCreateNewProduct = function () {
-        $http.post(contextPath + '/items', $scope.newProduct)
+        $http.post(contextPath + '/item', $scope.newProduct)
             .then(function (response) {
+                $http.post(contextPath + '/item', $scope.newProduct)
                 $scope.fillTable();
             });
     };
 
     $scope.deleteProductById = function (productId) {
         console.log('deleteTest');
-        $http.delete(contextPath + '/product?id=' + productId)
+        $http.delete(contextPath + '/item?id=' + productId)
             .then(function (response) {
                 $scope.fillTable();
             });

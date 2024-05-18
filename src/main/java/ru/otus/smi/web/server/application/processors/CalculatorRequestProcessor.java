@@ -1,6 +1,7 @@
 package ru.otus.smi.web.server.application.processors;
 
 import ru.otus.smi.web.server.HttpRequest;
+import ru.otus.smi.web.server.JDBC.JDBCService;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -8,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 
 public class CalculatorRequestProcessor implements RequestProcessor {
     @Override
-    public void execute(HttpRequest httpRequest, OutputStream output) throws IOException {
+    public void execute(HttpRequest httpRequest, OutputStream output, JDBCService jdbcService) throws IOException {
         int a = Integer.parseInt(httpRequest.getParameter("a"));
         int b = Integer.parseInt(httpRequest.getParameter("b"));
         int result = a + b;

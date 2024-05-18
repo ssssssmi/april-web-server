@@ -1,5 +1,6 @@
 package ru.otus.smi.web.server;
 
+import ru.otus.smi.web.server.JDBC.JDBCService;
 import ru.otus.smi.web.server.application.processors.*;
 
 import java.io.IOException;
@@ -18,18 +19,18 @@ public class Dispatcher {
         this.router.put("GET /hello", new HelloWorldRequestProcessor());
         this.router.put("GET /items", new GetAllProductsProcessor());
         this.router.put("GET /item", new GetProductProcessor());
-        this.router.put("POST /items", new CreateNewProductProcessor());
-        this.router.put("PUT /products", new EditProductProcessor());
-        this.router.put("DELETE /product", new DelProductProcessor());
+        this.router.put("POST /item", new CreateNewProductProcessor());
+        this.router.put("PUT /item", new EditProductProcessor());
+        this.router.put("DELETE /item", new DelProductProcessor());
         this.router.put("GET /file", new ReturnFileProcessor());
         this.unknownOperationRequestProcessor = new UnknownOperationRequestProcessor();
     }
 
-    public void execute(HttpRequest httpRequest, OutputStream outputStream) throws IOException {
+    public void execute(HttpRequest httpRequest, OutputStream outputStream, JDBCService jdbcService) throws IOException {
         if (!router.containsKey(httpRequest.getRouteKey())) {
-            unknownOperationRequestProcessor.execute(httpRequest, outputStream);
+            unknownOperationRequestProcessor.execute(httpRequest, outputStream, jdbcService);
             return;
         }
-        router.get(httpRequest.getRouteKey()).execute(httpRequest, outputStream);
+        router.get(httpRequest.getRouteKey()).execute(httpRequest, outputStream, jdbcService);
     }
 }

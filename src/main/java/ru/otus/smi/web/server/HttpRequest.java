@@ -88,6 +88,6 @@ public class HttpRequest {
             log.debug("\n" + rawRequest);
         }
         log.trace("\nURI: " + uri + "\n" + "HTTP-method: " +
-                  method + "\n" + "Parameters: " + parameters + "\n" + "Body: " + body + "\n");
+                method + "\n" + "Parameters: " + parameters + "\n" + "Body: " + body + "\n");
     }
 }
