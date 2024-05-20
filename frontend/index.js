@@ -11,7 +11,6 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     $scope.submitCreateNewProduct = function () {
         $http.post(contextPath + '/item', $scope.newProduct)
             .then(function (response) {
-                $http.post(contextPath + '/item', $scope.newProduct)
                 $scope.fillTable();
             });
     };

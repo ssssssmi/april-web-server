@@ -40,6 +40,10 @@ public class HttpRequest {
         return body;
     }
 
+    public HttpMethod getMethod() {
+        return method;
+    }
+
     public void tryToParseBody() {
         if (method != HttpMethod.GET && method != HttpMethod.DELETE) {
             log.debug("Start parse body");

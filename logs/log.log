@@ -4912,3 +4912,843 @@ Body:
 
 DEBUG 2024-05-18 17:05:29 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:22) - Answered OPTIONS
 DEBUG 2024-05-18 17:05:29 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+INFO  2024-05-20 22:05:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:29) - Server running on port: 8189
+INFO  2024-05-20 22:05:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:31) - Dispatcher initialized
+INFO  2024-05-20 22:05:28 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:34) - Database connected JDBC
+DEBUG 2024-05-20 22:05:32 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:05:32 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:05:32 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:05:32 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:05:32 [pool-2-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:05:32 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+OPTIONS /item HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: null
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: 
+HTTP-method: OPTIONS
+Parameters: {}
+Body: 
+
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:24) - Answered OPTIONS
+DEBUG 2024-05-20 22:05:46 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+POST /item HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Content-Length: 35
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+Content-Type: application/json;charset=UTF-8
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+{"title":"dfgdfgfg","price":123123}
+TRACE 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: POST
+Parameters: {}
+Body: {"title":"dfgdfgfg","price":123123}
+
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.application.processors.CreateNewProductProcessor (CreateNewProductProcessor.java:26) - Add item and send it with id
+DEBUG 2024-05-20 22:05:46 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:06:02 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:06:02 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:06:02 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:06:02 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:06:02 [pool-5-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:06:02 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+OPTIONS /item?id=b2877c38-a837-472e-924c-65a6b69be795 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: DELETE
+Origin: null
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: 
+HTTP-method: OPTIONS
+Parameters: {}
+Body: 
+
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:24) - Answered OPTIONS
+DEBUG 2024-05-20 22:06:24 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:06:24 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:06:24 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:06:24 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+DELETE /item?id=b2877c38-a837-472e-924c-65a6b69be795 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:06:24 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: DELETE
+Parameters: {id=b2877c38-a837-472e-924c-65a6b69be795}
+Body: null
+
+DEBUG 2024-05-20 22:06:24 [pool-7-thread-1] ru.otus.smi.web.server.application.processors.DelProductProcessor (DelProductProcessor.java:27) - Item deleted
+DEBUG 2024-05-20 22:06:24 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:06:24 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:06:24 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:06:24 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:06:24 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:06:24 [pool-8-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:06:24 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+INFO  2024-05-20 22:11:05 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:29) - Server running on port: 8189
+INFO  2024-05-20 22:11:05 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:31) - Dispatcher initialized
+INFO  2024-05-20 22:11:05 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:34) - Database connected JDBC
+DEBUG 2024-05-20 22:11:20 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:11:20 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:11:20 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:11:20 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:11:20 [pool-2-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:11:20 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+OPTIONS /item?id=326b7411-f6da-482f-8d65-40bbeaae2801 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: DELETE
+Origin: null
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: 
+HTTP-method: OPTIONS
+Parameters: {}
+Body: 
+
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:24) - Answered OPTIONS
+DEBUG 2024-05-20 22:13:10 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:13:10 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:13:10 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:13:10 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+DELETE /item?id=326b7411-f6da-482f-8d65-40bbeaae2801 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:13:10 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: DELETE
+Parameters: {id=326b7411-f6da-482f-8d65-40bbeaae2801}
+Body: null
+
+DEBUG 2024-05-20 22:13:10 [pool-4-thread-1] ru.otus.smi.web.server.application.processors.DelProductProcessor (DelProductProcessor.java:27) - Item deleted
+DEBUG 2024-05-20 22:13:10 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:13:10 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:13:10 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:13:10 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:13:10 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:13:10 [pool-5-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:13:10 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+OPTIONS /item HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: null
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: 
+HTTP-method: OPTIONS
+Parameters: {}
+Body: 
+
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:24) - Answered OPTIONS
+DEBUG 2024-05-20 22:13:26 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+POST /item HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Content-Length: 35
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+Content-Type: application/json;charset=UTF-8
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+{"title":"Товар","price":1000}
+TRACE 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: POST
+Parameters: {}
+Body: {"title":"Товар","price":1000}
+
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.application.processors.CreateNewProductProcessor (CreateNewProductProcessor.java:26) - Add item and send it with id
+DEBUG 2024-05-20 22:13:26 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:13:32 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:13:32 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:13:32 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:13:32 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:13:32 [pool-8-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:13:32 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:15:41 [pool-9-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+PUT /item HTTP/1.1
+Content-Type: application/json
+User-Agent: PostmanRuntime/7.39.0
+Accept: */*
+Postman-Token: a02c8c47-7cd4-4f17-a14f-5f8797724b5a
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 101
+
+{
+    "id": "81d97d2c-774d-418c-9b0e-d46a92bf6101",
+    "title": "item 001",
+    "price": 10000
+}
+TRACE 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: PUT
+Parameters: {}
+Body: {    "id": "81d97d2c-774d-418c-9b0e-d46a92bf6101",    "title": "item 001",    "price": 10000}
+
+DEBUG 2024-05-20 22:15:41 [pool-9-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.application.processors.EditProductProcessor (EditProductProcessor.java:25) - Edit item and send
+DEBUG 2024-05-20 22:15:41 [pool-10-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:15:56 [pool-11-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:15:56 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:15:56 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:15:56 [pool-11-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:15:56 [pool-11-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:15:56 [pool-11-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:16:32 [pool-12-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:16:32 [pool-12-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:16:32 [pool-12-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /hello HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:16:32 [pool-12-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /hello
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:16:32 [pool-12-thread-1] ru.otus.smi.web.server.application.processors.HelloWorldRequestProcessor (HelloWorldRequestProcessor.java:19) - Sent Hello
+DEBUG 2024-05-20 22:16:32 [pool-12-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:16:32 [pool-13-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:16:32 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:16:32 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /favicon.ico HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8189/hello
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:16:32 [pool-13-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /favicon.ico
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:16:32 [pool-13-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:17:09 [pool-15-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:17:09 [pool-14-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:17:09 [pool-15-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:17:09 [pool-14-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:17:09 [pool-15-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /calc?a=5&b=4 HTTP/1.1
+User-Agent: PostmanRuntime/7.39.0
+Accept: */*
+Postman-Token: d04ab2e1-956a-454e-8ca3-2b1eb0ece826
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-20 22:17:09 [pool-15-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /calc
+HTTP-method: GET
+Parameters: {a=5, b=4}
+Body: null
+
+DEBUG 2024-05-20 22:17:09 [pool-15-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:17:18 [pool-16-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:17:18 [pool-16-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:17:18 [pool-16-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /calc?a=5&b=4 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:17:18 [pool-16-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /calc
+HTTP-method: GET
+Parameters: {a=5, b=4}
+Body: null
+
+DEBUG 2024-05-20 22:17:18 [pool-16-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:17:18 [pool-17-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:17:18 [pool-17-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:17:18 [pool-17-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /favicon.ico HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:8189/calc?a=5&b=4
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:17:18 [pool-17-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /favicon.ico
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:17:18 [pool-17-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:19:00 [pool-18-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:19:00 [pool-18-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:19:00 [pool-19-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:19:00 [pool-19-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:19:00 [pool-19-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /file?name=test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.39.0
+Accept: */*
+Postman-Token: 7cc00d9e-1b77-4e3b-9653-5d65fdf0e1d0
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-20 22:19:00 [pool-19-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-20 22:19:00 [pool-19-thread-1] ru.otus.smi.web.server.application.processors.ReturnFileProcessor (ReturnFileProcessor.java:32) - Document sent
+DEBUG 2024-05-20 22:19:00 [pool-19-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:19:08 [pool-20-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:19:08 [pool-21-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:19:08 [pool-20-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:19:08 [pool-21-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:19:08 [pool-21-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /file?name=test.txt HTTP/1.1
+User-Agent: PostmanRuntime/7.39.0
+Accept: */*
+Postman-Token: 90332edd-4a0b-44fc-b5cc-abbc4a91f253
+Host: localhost:8189
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+
+TRACE 2024-05-20 22:19:08 [pool-21-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /file
+HTTP-method: GET
+Parameters: {name=test.txt}
+Body: null
+
+DEBUG 2024-05-20 22:19:08 [pool-21-thread-1] ru.otus.smi.web.server.application.processors.ReturnFileProcessor (ReturnFileProcessor.java:32) - Document sent
+DEBUG 2024-05-20 22:19:08 [pool-21-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+INFO  2024-05-20 22:22:31 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:29) - Server running on port: 8189
+INFO  2024-05-20 22:22:31 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:31) - Dispatcher initialized
+INFO  2024-05-20 22:22:31 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:34) - Database connected JDBC
+DEBUG 2024-05-20 22:22:33 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:33 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:33 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:22:33 [pool-2-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:22:33 [pool-2-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:22:33 [pool-2-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+OPTIONS /item HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: null
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: 
+HTTP-method: OPTIONS
+Parameters: {}
+Body: 
+
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:24) - Answered OPTIONS
+DEBUG 2024-05-20 22:22:42 [pool-3-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+POST /item HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Content-Length: 33
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+Content-Type: application/json;charset=UTF-8
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+{"title":"asdasd","price":123123}
+TRACE 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: POST
+Parameters: {}
+Body: {"title":"asdasd","price":123123}
+
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.application.processors.CreateNewProductProcessor (CreateNewProductProcessor.java:27) - Add item and send it with id
+DEBUG 2024-05-20 22:22:42 [pool-4-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:22:42 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:42 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:42 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:22:42 [pool-5-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:22:42 [pool-5-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:22:42 [pool-5-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:49) - Start parse body
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:64) - Body parsed
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+OPTIONS /item?id=3c18e47f-97fe-435e-aa3b-f39909bbdc54 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: DELETE
+Origin: null
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: 
+HTTP-method: OPTIONS
+Parameters: {}
+Body: 
+
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.application.processors.OptionsRequestProcessor (OptionsRequestProcessor.java:24) - Answered OPTIONS
+DEBUG 2024-05-20 22:22:45 [pool-6-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:22:45 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:45 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:45 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+DELETE /item?id=3c18e47f-97fe-435e-aa3b-f39909bbdc54 HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:22:45 [pool-7-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /item
+HTTP-method: DELETE
+Parameters: {id=3c18e47f-97fe-435e-aa3b-f39909bbdc54}
+Body: null
+
+DEBUG 2024-05-20 22:22:45 [pool-7-thread-1] ru.otus.smi.web.server.application.processors.DelProductProcessor (DelProductProcessor.java:27) - Item deleted
+DEBUG 2024-05-20 22:22:45 [pool-7-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:39) - New client connected
+DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:70) - Start parse request line
+DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:92) - 
+GET /items HTTP/1.1
+Host: localhost:8189
+Connection: keep-alive
+sec-ch-ua: "Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Windows"
+Origin: null
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7
+
+
+TRACE 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.HttpRequest (HttpRequest.java:94) - 
+URI: /items
+HTTP-method: GET
+Parameters: {}
+Body: null
+
+DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
+DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
