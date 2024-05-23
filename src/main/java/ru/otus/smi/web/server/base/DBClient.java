@@ -1,4 +1,4 @@
-package ru.otus.smi.web.server.JDBC;
+package ru.otus.smi.web.server.base;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -8,6 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
@@ -22,7 +23,6 @@ public class DBClient {
 
     public List<Item> getItems() {
         List<Item> items = new ArrayList<>();
-
         try (ResultSet usersResultSet = statements.getItems()) {
             while (usersResultSet.next()) {
                 UUID id = usersResultSet.getObject(1, UUID.class);
@@ -36,7 +36,7 @@ public class DBClient {
             log.fatal("Error get item from base");
         }
         log.error("No items found");
-        return null;
+        return Collections.emptyList();
     }
 
     public Item getItemById(UUID searchID) {

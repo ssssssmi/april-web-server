@@ -9,7 +9,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
     };
 
     $scope.submitCreateNewProduct = function () {
-        $http.post(contextPath + '/item', $scope.newProduct)
+        $http.post(contextPath + '/items', $scope.newProduct)
             .then(function (response) {
                 $scope.fillTable();
             });
@@ -17,7 +17,7 @@ angular.module('app', []).controller('indexController', function ($scope, $http)
 
     $scope.deleteProductById = function (productId) {
         console.log('deleteTest');
-        $http.delete(contextPath + '/item?id=' + productId)
+        $http.delete(contextPath + '/items?id=' + productId)
             .then(function (response) {
                 $scope.fillTable();
             });

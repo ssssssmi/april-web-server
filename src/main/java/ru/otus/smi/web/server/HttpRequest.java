@@ -73,9 +73,6 @@ public class HttpRequest {
         this.uri = rawRequest.substring(startIndex + 1, endIndex);
         this.method = HttpMethod.valueOf(rawRequest.substring(0, startIndex));
         this.parameters = new HashMap<>();
-        if (this.method == HttpMethod.OPTIONS) {
-            this.uri = "";
-        }
         if (uri.contains("?")) {
             String[] elements = uri.split("[?]");
             this.uri = elements[0];
@@ -91,7 +88,7 @@ public class HttpRequest {
         if (showRawRequest) {
             log.debug("\n" + rawRequest);
         }
-        log.trace("\nURI: " + uri + "\n" + "HTTP-method: " +
-                method + "\n" + "Parameters: " + parameters + "\n" + "Body: " + body + "\n");
+        log.trace("\nURI: {}\n" + "HTTP-method: {}\n" + "Parameters: {}\n" + "Body: {}\n",
+                uri, method, parameters, body);
     }
 }

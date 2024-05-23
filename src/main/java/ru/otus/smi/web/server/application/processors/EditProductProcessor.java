@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.otus.smi.web.server.HttpRequest;
-import ru.otus.smi.web.server.JDBC.DBClient;
+import ru.otus.smi.web.server.base.DBClient;
 import ru.otus.smi.web.server.application.Item;
 
 import java.io.IOException;
@@ -24,8 +24,7 @@ public class EditProductProcessor implements RequestProcessor {
         Gson gson = new Gson();
         Item item = gson.fromJson(httpRequest.getBody(), Item.class);
         dbClient.editItems(item);
-        String jsonOutItem = gson.toJson(item);
-        String response = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n" + jsonOutItem;
+        String response = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nAccess-Control-Allow-Origin: *\r\n\r\n" + gson.toJson(item);
         output.write(response.getBytes(StandardCharsets.UTF_8));
         log.debug("Edit item and send");
     }

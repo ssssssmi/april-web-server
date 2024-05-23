@@ -1,4 +1,4 @@
-package ru.otus.smi.web.server.JDBC;
+package ru.otus.smi.web.server.base;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

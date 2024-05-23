@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.otus.smi.web.server.HttpRequest;
-import ru.otus.smi.web.server.JDBC.DBClient;
+import ru.otus.smi.web.server.base.DBClient;
 
 import java.io.IOException;
 import java.io.OutputStream;

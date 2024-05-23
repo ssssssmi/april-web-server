@@ -1,4 +1,4 @@
-package ru.otus.smi.web.server.JDBC;
+package ru.otus.smi.web.server.base;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

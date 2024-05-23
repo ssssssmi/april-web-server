@@ -17,9 +17,9 @@ public class Dispatcher {
         this.router = new HashMap<>();
         this.router.put("GET /items", new GetAllProductsProcessor());
         this.router.put("GET /item", new GetProductProcessor());
-        this.router.put("POST /item", new CreateNewProductProcessor());
-        this.router.put("PUT /item", new EditProductProcessor());
-        this.router.put("DELETE /item", new DelProductProcessor());
+        this.router.put("POST /items", new CreateNewProductProcessor());
+        this.router.put("PUT /items", new EditProductProcessor());
+        this.router.put("DELETE /items", new DelProductProcessor());
         this.router.put("GET /file", new ReturnFileProcessor());
         this.unknownOperationRequestProcessor = new UnknownOperationRequestProcessor();
         this.optionsRequestProcessor = new OptionsRequestProcessor();

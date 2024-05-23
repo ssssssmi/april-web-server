@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.otus.smi.web.server.HttpRequest;
-import ru.otus.smi.web.server.JDBC.DBClient;
+import ru.otus.smi.web.server.base.DBClient;
 import ru.otus.smi.web.server.application.Item;
 
 import java.io.IOException;
@@ -23,7 +23,8 @@ public class GetAllProductsProcessor implements RequestProcessor {
     public void execute(HttpRequest httpRequest, OutputStream output) throws IOException {
         List<Item> items = dbClient.getItems();
         Gson gson = new Gson();
-        String result = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n" + gson.toJson(items);
+        String result = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nAccess-Control-Allow-Origin: *\r\n\r\n"
+                        + gson.toJson(items);
         output.write(result.getBytes(StandardCharsets.UTF_8));
         log.debug("Generated list of items and sent it");
     }

@@ -2,7 +2,7 @@ package ru.otus.smi.web.server;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.otus.smi.web.server.JDBC.DBConnect;
+import ru.otus.smi.web.server.base.DBConnect;
 
 import java.io.IOException;
 import java.net.ServerSocket;
