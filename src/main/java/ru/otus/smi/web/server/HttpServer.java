@@ -2,8 +2,7 @@ package ru.otus.smi.web.server;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.otus.smi.web.server.JDBC.JDBC;
-import ru.otus.smi.web.server.JDBC.JDBCService;
+import ru.otus.smi.web.server.JDBC.DBClient;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -29,8 +28,8 @@ public class HttpServer {
             log.info("Server running on port: " + port);
             this.dispatcher = new Dispatcher();
             log.info("Dispatcher initialized");
-            this.jdbcService = new JDBC();
-            JDBC.connectJDBC();
+            this.jdbcService = new DBClient(statements);
+            DBClient.connectJDBC();
             log.info("Database connected " + jdbcService.getClass().getSimpleName());
             while (true) {
                 Socket socket = serverSocket.accept();

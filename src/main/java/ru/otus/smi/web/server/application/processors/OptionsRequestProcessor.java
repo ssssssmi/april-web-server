@@ -3,7 +3,6 @@ package ru.otus.smi.web.server.application.processors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.otus.smi.web.server.HttpRequest;
-import ru.otus.smi.web.server.JDBC.JDBCService;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -13,7 +12,7 @@ public class OptionsRequestProcessor implements RequestProcessor {
     private static final Logger log = LogManager.getLogger(OptionsRequestProcessor.class.getName());
 
     @Override
-    public void execute(HttpRequest httpRequest, OutputStream output, JDBCService jdbcService) throws IOException {
+    public void execute(HttpRequest httpRequest, OutputStream output) throws IOException {
         String response = "HTTP/1.1 204 No Content\r\n" +
                 "Connection: keep-alive\r\n" +
                 "Access-Control-Allow-Origin: *\r\n" +

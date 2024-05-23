@@ -5752,3 +5752,6 @@ Body: null
 
 DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.application.processors.GetAllProductsProcessor (GetAllProductsProcessor.java:24) - Generated list of items and sent it
 DEBUG 2024-05-20 22:22:45 [pool-8-thread-1] ru.otus.smi.web.server.HttpServer (HttpServer.java:55) - Close client socket
+INFO  2024-05-22 09:33:51 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:29) - Server running on port: 8189
+INFO  2024-05-22 09:33:51 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:31) - Dispatcher initialized
+FATAL 2024-05-22 09:33:51 [main] ru.otus.smi.web.server.HttpServer (HttpServer.java:66) - Error start JDBC

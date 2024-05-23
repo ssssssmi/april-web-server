@@ -1,11 +1,10 @@
 package ru.otus.smi.web.server.application.processors;
 
 import ru.otus.smi.web.server.HttpRequest;
-import ru.otus.smi.web.server.JDBC.JDBCService;
 
 import java.io.IOException;
 import java.io.OutputStream;
 
 public interface RequestProcessor {
-    void execute(HttpRequest httpRequest, OutputStream output, JDBCService jdbcService) throws IOException;
+    void execute(HttpRequest httpRequest, OutputStream output) throws IOException;
 }
