@@ -11,31 +11,16 @@ public class Item {
         return id;
     }
 
-    public void setId(UUID id) {
-        this.id = id;
-    }
-
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public int getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public Item() {
-    }
-
-    public Item(String title, int price) {
-        this.id = UUID.randomUUID();
+    public Item(UUID id, String title, int price) {
+        this.id = id;
         this.title = title;
         this.price = price;
     }

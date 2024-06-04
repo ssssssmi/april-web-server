@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 public class HttpRequest {
@@ -15,6 +16,13 @@ public class HttpRequest {
     private HttpMethod method;
     private Map<String, String> parameters;
     private String body;
+    private UUID id;
+
+    public HttpRequest(String rawRequest) {
+        this.rawRequest = rawRequest;
+        this.parseRequestLine();
+        this.tryToParseBody();
+    }
 
     public String getRouteKey() {
         return String.format("%s %s", method, uri);
@@ -32,14 +40,12 @@ public class HttpRequest {
         return body;
     }
 
-    public HttpRequest(String rawRequest) {
-        this.rawRequest = rawRequest;
-        this.parseRequestLine();
-        this.tryToParseBody();
+    public HttpMethod getMethod() {
+        return method;
     }
 
     public void tryToParseBody() {
-        if (method != HttpMethod.GET) {
+        if (method != HttpMethod.GET && method != HttpMethod.DELETE) {
             log.debug("Start parse body");
             List<String> lines = rawRequest.lines().collect(Collectors.toList());
             int splitLine = -1;
@@ -59,14 +65,6 @@ public class HttpRequest {
             }
         }
     }
-
-    // POST /products HTTP/1.1
-    // Content-Type: application/json
-    //
-    // {
-    //   "title": "a",
-    //   "price": 100
-    // }
 
     public void parseRequestLine() {
         log.debug("Start parse request line");
@@ -90,7 +88,7 @@ public class HttpRequest {
         if (showRawRequest) {
             log.debug("\n" + rawRequest);
         }
-        log.trace("\nURI: " + uri + "\n" + "HTTP-method: " +
-                  method + "\n" + "Parameters: " + parameters + "\n" + "Body: " + body + "\n");
+        log.trace("\nURI: {}\n" + "HTTP-method: {}\n" + "Parameters: {}\n" + "Body: {}\n",
+                uri, method, parameters, body);
     }
 }

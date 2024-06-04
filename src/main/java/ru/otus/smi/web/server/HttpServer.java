@@ -2,7 +2,7 @@ package ru.otus.smi.web.server;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import ru.otus.smi.web.server.application.Storage;
+import ru.otus.smi.web.server.base.DBConnect;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -14,6 +14,7 @@ public class HttpServer {
     private static final Logger log = LogManager.getLogger(HttpServer.class.getName());
     private int port;
     private Dispatcher dispatcher;
+    private DBConnect dbConnect;
 
     public HttpServer(int port) {
         this.port = port;
@@ -24,7 +25,8 @@ public class HttpServer {
             log.info("Server running on port: " + port);
             this.dispatcher = new Dispatcher();
             log.info("Dispatcher initialized");
-            Storage.init();
+            this.dbConnect = new DBConnect();
+            log.info("Database connected " + dbConnect.getClass().getSimpleName());
             while (true) {
                 Socket socket = serverSocket.accept();
                 ExecutorService executor = Executors.newCachedThreadPool();
@@ -54,7 +56,7 @@ public class HttpServer {
                 });
             }
         } catch (IOException e) {
-            log.fatal("Ошибка создания сокета");
+            log.fatal("Error create socket");
         }
     }
 }
